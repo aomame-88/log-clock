@@ -1,9 +1,12 @@
 <title>log clock</title>
 
 <style>
+#date {
+  display: none;
+}
 #clock {
-  width: 225px;
-  height: 225px;
+  width: 200px;
+  height: 200px;
   position: absolute;
   border: solid 2px;
   border-radius: 50%;
@@ -11,37 +14,39 @@
 #clock .hand {
   rotate: 0deg;
   position: absolute;
-  position-area: center;
 }
 #clock #second_hand {
   background: #000;
   width: 2px;
+  top: 10px;
+  transform-origin: 50% 90px;
   height: 120px;
-  transform-origin: 50% 100px;
-  bottom: 80px;
+  left: 99px;
 }
 #clock #minute_hand {
   background: #000;
   width: 3px;
-  height: 110px;
-  transform-origin: 50% 90px;
-  bottom: 70px;
+  top: 20px;
+  transform-origin: 50% 80px;
+  height: 100px;
+  left: 98.5px;
 }
 #clock #hour_hand {
   background: #000;
   width: 5px;
-  height: 80px;
-  transform-origin: 50% 70px;
-  bottom: 60px;
+  top: 50px;
+  transform-origin: 50% 50px;
+  height: 60px;
+  left: 97.5px;
 }
 #clock .scale_bar {
   width: 1px;
   height: 50%;
   position: absolute;
-  position-area: center;
   transform-origin: 50% bottom;
   bottom: 50%;
   justify-items: center;
+  left: 99.5px;
 }
 #clock .scale1 {
   background: #000;
